@@ -68,13 +68,13 @@ def theMain(listOfNames):
         ## If person has less than 20 characters/words.. They're not included ##
         if len(tokenizedlist) > 20:
 
-            ## Debugging ##
+            """ Debugging """
             # print(j)
             # print(freqDist.most_common(20))
             # print("\n")
             # print(listOfNames)
 
-            ## Export to csv file ##
+            """ Export to csv file """
             # try:
             #     with open('output.csv', 'a', newline='') as file:
             #         writer = csv.writer(file)
@@ -84,7 +84,7 @@ def theMain(listOfNames):
             #     print(e)
             #     print("Error writing to csv file")
 
-            # Export to txt file ##
+            """ Export to txt file """
             file3 = open("output.txt", "a", encoding="utf-8")
             file3.write(j + "\n")
             file3.write(str(freqDist.most_common(20)) + "\n")

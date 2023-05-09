@@ -54,7 +54,7 @@ def main(listOfNames):
 
         print(text)
 
-        ## Export to txt file ##
+        """ Export to txt file """
         file3 = open(j+".txt", "a", encoding="utf-8")
         file3.write(j + "\n")
         file3.write(text)
